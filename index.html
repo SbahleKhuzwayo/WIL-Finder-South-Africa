@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WIL Finder South Africa</title>
+  <meta name="author" content="Sbahle Teddy Khuzwayo">
+  <meta name="description" content="Find work-integrated learning (WIL) placements in South Africa after finishing your theory coursework. Directory, application checklist, email builder and application tracker.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#directory">Skip to the directory</a>
+
+  <header class="top">
+    <div class="wrap">
+      <p class="eyebrow">For students who have finished their theory</p>
+      <h1>WIL Finder South Africa</h1>
+      <p class="byline">Built by <strong>Sbahle Teddy Khuzwayo</strong></p>
+      <p class="lead">Find work-integrated learning (WIL) placements, prepare your documents, write your application email and keep track of every application, all in one place.</p>
+      <nav aria-label="Sections">
+        <a href="#directory">Find WIL</a>
+        <a href="#prepare">Prepare</a>
+        <a href="#email">Email builder</a>
+        <a href="#tracker">My applications</a>
+        <a href="#guide">Guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section id="directory" aria-labelledby="h-dir">
+      <h2 id="h-dir">1. Find places to apply</h2>
+      <p class="hint">These are real organisations and portals. Opportunities change every intake, so open the official page and look for student, WIL, internship or in-service training adverts. <strong>Never pay anyone for a placement.</strong></p>
+
+      <form class="filters" role="search" onsubmit="return false">
+        <label>Search
+          <input id="q" type="search" placeholder="e.g. bank, IT" autocomplete="off">
+        </label>
+        <label>My field
+          <select id="f-field"><option value="">All fields</option></select>
+        </label>
+        <label>Province
+          <select id="f-province"><option value="">All provinces</option></select>
+        </label>
+        <label>Type
+          <select id="f-type"><option value="">All types</option></select>
+        </label>
+        <label class="check"><input id="f-saved" type="checkbox"> Saved only</label>
+      </form>
+
+      <p id="count" class="count" aria-live="polite"></p>
+      <div id="cards" class="cards"></div>
+      <p class="small">Province shows the head office. National organisations appear in every province because they place students across the country.</p>
+    </section>
+
+    <section id="prepare" aria-labelledby="h-prep">
+      <h2 id="h-prep">2. Get your documents ready</h2>
+      <p class="hint">Tick each item when it is ready. Your ticks are saved in this browser.</p>
+      <ul id="checklist" class="checklist"></ul>
+      <p id="check-progress" class="small" aria-live="polite"></p>
+    </section>
+
+    <section id="email" aria-labelledby="h-email">
+      <h2 id="h-email">3. Write your application email</h2>
+      <p class="hint">Fill in your details and the email is built for you. Nothing is sent or stored on a server.</p>
+      <div class="two">
+        <form id="email-form" class="stack" onsubmit="return false">
+          <label>Your full name <input name="name" autocomplete="name"></label>
+          <label>Your phone number <input name="phone" autocomplete="tel"></label>
+          <label>Qualification <input name="course" placeholder="e.g. National Diploma: Information Technology"></label>
+          <label>Institution <input name="institution" placeholder="e.g. Tshwane University of Technology"></label>
+          <label>Organisation applying to <input name="organisation" placeholder="e.g. Telkom"></label>
+          <label>Role or advert title (optional) <input name="role" placeholder="e.g. IT Support WIL Student"></label>
+          <label>Placement length you need (optional) <input name="duration" placeholder="e.g. 12 months"></label>
+          <label>Your strengths (optional) <input name="skills" placeholder="e.g. Python, networking basics, teamwork"></label>
+        </form>
+        <div class="stack">
+          <label>Subject <input id="out-subject" readonly></label>
+          <label>Email <textarea id="out-body" rows="16" readonly></textarea></label>
+          <div class="row">
+            <button id="copy-email" type="button">Copy email</button>
+            <a id="mailto" class="btn secondary" href="#">Open in my email app</a>
+          </div>
+          <p id="copy-msg" class="small" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracker" aria-labelledby="h-track">
+      <h2 id="h-track">4. Keep track of your applications</h2>
+      <p class="hint">Saved in this browser only. Download a copy as a spreadsheet at any time.</p>
+      <form id="track-form" class="track-form" onsubmit="return false">
+        <label>Organisation <input name="org" required></label>
+        <label>Role <input name="role"></label>
+        <label>Date applied <input name="date" type="date"></label>
+        <label>Status
+          <select name="status">
+            <option>Applied</option><option>Followed up</option><option>Interview</option>
+            <option>Offer</option><option>Placed</option><option>Unsuccessful</option>
+          </select>
+        </label>
+        <label class="wide">Notes <input name="notes" placeholder="Contact person, reference number, next step"></label>
+        <button type="submit">Add application</button>
+      </form>
+      <p id="track-summary" class="small" aria-live="polite"></p>
+      <div class="table-wrap">
+        <table id="track-table">
+          <thead><tr><th>Organisation</th><th>Role</th><th>Date</th><th>Status</th><th>Notes</th><th><span class="sr">Remove</span></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p id="track-empty" class="small">No applications yet. Add your first one above.</p>
+      <button id="export-csv" type="button" class="secondary">Download as spreadsheet (CSV)</button>
+    </section>
+
+    <section id="guide" aria-labelledby="h-guide">
+      <h2 id="h-guide">Guide: how WIL works</h2>
+      <details open><summary>What is WIL?</summary>
+        <p>Work-integrated learning is the workplace part of many diplomas and occupational qualifications. You finish your theory at college or university, then spend time in a real workplace so you can graduate. The exact length and rules depend on your institution and qualification.</p></details>
+      <details><summary>Where do I start?</summary>
+        <p>Ask your institution's WIL or Co-operative Education office what they require: the placement letter, logbook or portfolio, the number of months or hours, and any deadlines. Many institutions also keep a list of employers who have taken students before.</p></details>
+      <details><summary>How do I stand out?</summary>
+        <p>Apply to many places, apply early, and follow up politely after about a week. Keep your CV to one page, show what you can already do (projects, practical work), and match the advert's keywords honestly.</p></details>
+      <details><summary>Will I be paid?</summary>
+        <p>It varies. Some placements pay a stipend, some do not. Ask before you accept and check what your institution requires from the employer.</p></details>
+      <details><summary>How do I avoid scams?</summary>
+        <p>A real placement never costs you money. Do not pay "registration", "processing" or "uniform" fees to get a placement. Apply only through the organisation's own website or email, and check that the email address matches the organisation's real domain.</p></details>
+      <details><summary>Can't find advertised placements?</summary>
+        <p>Send a short enquiry email to the HR or training department, visit local businesses and municipal offices in person with your CV, and ask lecturers and classmates for leads. Use the email builder above.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 Sbahle Teddy Khuzwayo. WIL Finder South Africa is a free student project. It links to organisations' own websites and does not guarantee any placement. Always confirm details with the organisation.</p>
+      <p>Source code: edit <code>js/data.js</code> to add organisations.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/logic.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

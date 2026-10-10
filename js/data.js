@@ -1,0 +1,74 @@
+/*
+  WIL Finder South Africa - Sbahle Teddy Khuzwayo
+  Directory data. Each entry points to the organisation's OWN website.
+  Entries do NOT claim that a placement is open right now: opportunities change
+  every intake, so the site always tells students to confirm on the official page.
+
+  To add an organisation, copy one line and edit it.
+  fields   : subject areas students might match (see FIELDS in app.js)
+  type     : Employer | Public sector | SETA | Job board
+  province : head-office province, or "National"
+*/
+window.WIL_DATA = [
+  // ---------- Telecoms and ICT ----------
+  { id: "telkom", name: "Telkom", type: "Employer", province: "Gauteng", fields: ["ICT", "Engineering", "Business & Admin"], url: "https://www.telkom.co.za", note: "Large telecoms employer. Look for the Careers section and filter for student, graduate or WIL adverts." },
+  { id: "vodacom", name: "Vodacom", type: "Employer", province: "Gauteng", fields: ["ICT", "Engineering", "Business & Admin", "Finance & Accounting"], url: "https://www.vodacom.com", note: "Mobile network operator. Check the Careers page for early-careers and internship intakes." },
+  { id: "mtn", name: "MTN South Africa", type: "Employer", province: "Gauteng", fields: ["ICT", "Engineering", "Business & Admin", "Finance & Accounting"], url: "https://www.mtn.co.za", note: "Mobile network operator. Look under Careers for student and graduate programmes." },
+  { id: "liquid", name: "Liquid Intelligent Technologies", type: "Employer", province: "Gauteng", fields: ["ICT", "Engineering"], url: "https://liquid.tech", note: "Network and cloud services company. Check Careers for entry-level and student roles." },
+  { id: "altron", name: "Altron", type: "Employer", province: "Gauteng", fields: ["ICT", "Engineering", "Finance & Accounting"], url: "https://www.altron.com", note: "Technology group with several business units. Each unit can post its own student roles." },
+  { id: "bcx", name: "BCX", type: "Employer", province: "Gauteng", fields: ["ICT", "Business & Admin"], url: "https://www.bcx.co.za", note: "IT services company. Check Careers for graduate and student intakes." },
+  { id: "datacentrix", name: "Datacentrix", type: "Employer", province: "Gauteng", fields: ["ICT"], url: "https://www.datacentrix.co.za", note: "IT infrastructure and support company. Useful for IT support and networking students." },
+  { id: "multichoice", name: "MultiChoice", type: "Employer", province: "Gauteng", fields: ["ICT", "Engineering", "Business & Admin", "Marketing & Media"], url: "https://www.multichoice.com", note: "Broadcaster and technology company. Check Careers for student programmes." },
+  { id: "sita", name: "SITA (State Information Technology Agency)", type: "Public sector", province: "Gauteng", fields: ["ICT"], url: "https://www.sita.co.za", note: "Government's IT agency. A natural place to look for public-sector ICT WIL." },
+
+  // ---------- Banking and insurance ----------
+  { id: "standardbank", name: "Standard Bank", type: "Employer", province: "Gauteng", fields: ["Finance & Accounting", "ICT", "Business & Admin"], url: "https://www.standardbank.com", note: "Large bank. Check Careers for student, graduate and learnership adverts." },
+  { id: "absa", name: "Absa", type: "Employer", province: "Gauteng", fields: ["Finance & Accounting", "ICT", "Business & Admin"], url: "https://www.absa.africa", note: "Large bank. Look for early-careers adverts on the Careers page." },
+  { id: "nedbank", name: "Nedbank", type: "Employer", province: "Gauteng", fields: ["Finance & Accounting", "ICT", "Business & Admin"], url: "https://www.nedbank.co.za", note: "Large bank. Check the Careers section for student and graduate programmes." },
+  { id: "fnb", name: "FNB", type: "Employer", province: "Gauteng", fields: ["Finance & Accounting", "ICT", "Business & Admin"], url: "https://www.fnb.co.za", note: "Large bank. Careers page lists graduate and entry-level roles." },
+  { id: "capitec", name: "Capitec Bank", type: "Employer", province: "Western Cape", fields: ["Finance & Accounting", "ICT", "Business & Admin"], url: "https://www.capitecbank.co.za", note: "Bank headquartered in Stellenbosch. Check Careers for entry-level and student roles." },
+  { id: "discovery", name: "Discovery", type: "Employer", province: "Gauteng", fields: ["Finance & Accounting", "ICT", "Business & Admin", "Human Resources"], url: "https://www.discovery.co.za", note: "Insurer and health company. Check Careers for graduate and student programmes." },
+  { id: "sanlam", name: "Sanlam", type: "Employer", province: "Western Cape", fields: ["Finance & Accounting", "ICT", "Business & Admin"], url: "https://www.sanlam.co.za", note: "Financial services group. Look under Careers for early-careers adverts." },
+  { id: "oldmutual", name: "Old Mutual", type: "Employer", province: "Gauteng", fields: ["Finance & Accounting", "ICT", "Business & Admin"], url: "https://www.oldmutual.co.za", note: "Insurer and investment group. Check Careers for student and graduate intakes." },
+
+  // ---------- Energy, mining, transport, engineering ----------
+  { id: "eskom", name: "Eskom", type: "Public sector", province: "Gauteng", fields: ["Engineering", "ICT", "Finance & Accounting", "Business & Admin"], url: "https://www.eskom.co.za/careers/", note: "Power utility. When this directory was built, Eskom's careers page said its recruitment website was temporarily unavailable, so confirm it is back before relying on it." },
+  { id: "transnet", name: "Transnet", type: "Public sector", province: "National", fields: ["Engineering", "Logistics", "ICT", "Finance & Accounting"], url: "https://www.transnet.net", note: "Rail, ports and pipelines. Operates across many provinces, so placements are not only in Gauteng." },
+  { id: "sasol", name: "Sasol", type: "Employer", province: "Gauteng", fields: ["Engineering", "ICT", "Finance & Accounting"], url: "https://www.sasol.com", note: "Energy and chemicals company. Check Careers for student and graduate programmes." },
+  { id: "csir", name: "CSIR", type: "Public sector", province: "Gauteng", fields: ["Engineering", "ICT"], url: "https://www.csir.co.za", note: "National research organisation. Look for student and internship opportunities in Careers." },
+  { id: "randwater", name: "Rand Water", type: "Public sector", province: "Gauteng", fields: ["Engineering", "ICT", "Finance & Accounting"], url: "https://www.randwater.co.za", note: "Water utility. Check Careers for in-service training and student adverts." },
+  { id: "prasa", name: "PRASA", type: "Public sector", province: "National", fields: ["Engineering", "Logistics", "Business & Admin"], url: "https://www.prasa.com", note: "Passenger rail agency. Check Careers for student and graduate adverts." },
+  { id: "acsa", name: "Airports Company South Africa", type: "Public sector", province: "Gauteng", fields: ["Engineering", "Hospitality & Tourism", "Business & Admin", "ICT"], url: "https://www.airports.co.za", note: "Operates the main airports. Check Careers for student and graduate roles." },
+
+  // ---------- Retail and media ----------
+  { id: "shoprite", name: "Shoprite Holdings", type: "Employer", province: "Western Cape", fields: ["Retail & Marketing", "Business & Admin", "Finance & Accounting", "Human Resources", "Logistics"], url: "https://www.shopriteholdings.co.za", note: "Large retailer with stores in many provinces. Good for retail, admin and logistics students." },
+  { id: "picknpay", name: "Pick n Pay", type: "Employer", province: "Western Cape", fields: ["Retail & Marketing", "Business & Admin", "Finance & Accounting", "Human Resources", "Logistics"], url: "https://www.picknpay.co.za", note: "Large retailer. Check Careers for student and entry-level adverts." },
+  { id: "woolworths", name: "Woolworths", type: "Employer", province: "Western Cape", fields: ["Retail & Marketing", "Business & Admin", "Finance & Accounting", "ICT"], url: "https://www.woolworths.co.za", note: "Retailer. Check Careers for graduate and student programmes." },
+  { id: "mrprice", name: "Mr Price Group", type: "Employer", province: "KwaZulu-Natal", fields: ["Retail & Marketing", "Business & Admin", "Finance & Accounting", "ICT"], url: "https://www.mrpricegroup.com", note: "Retail group headquartered in Durban. Check Careers for student and graduate roles." },
+  { id: "takealot", name: "Takealot", type: "Employer", province: "Western Cape", fields: ["ICT", "Retail & Marketing", "Logistics", "Business & Admin"], url: "https://www.takealot.com", note: "Online retailer. Look at the careers page for tech and operations entry-level roles." },
+  { id: "sabc", name: "SABC", type: "Public sector", province: "Gauteng", fields: ["Marketing & Media", "ICT", "Engineering", "Business & Admin"], url: "https://www.sabc.co.za", note: "Public broadcaster. Check Careers for internships and student placements." },
+
+  // ---------- Government ----------
+  { id: "sars", name: "SARS (South African Revenue Service)", type: "Public sector", province: "National", fields: ["Finance & Accounting", "ICT", "Business & Admin", "Public Management"], url: "https://www.sars.gov.za", note: "Tax authority with offices in many provinces. Look for Careers and graduate or student programmes." },
+  { id: "dpsa", name: "Public Service vacancies (DPSA)", type: "Public sector", province: "National", fields: ["Public Management", "Business & Admin", "Human Resources", "Finance & Accounting", "ICT"], url: "https://www.dpsa.gov.za", note: "National government departments advertise internships and student roles in the Public Service Vacancy Circular. Also check your provincial government's website." },
+  { id: "municipality", name: "Your local municipality", type: "Public sector", province: "National", fields: ["Public Management", "Business & Admin", "Human Resources", "Finance & Accounting", "Engineering", "ICT"], url: "https://www.google.com/search?q=municipality+vacancies+in-service+training+students", note: "Every municipality takes in-service trainees. Search your municipality's name plus 'vacancies' and visit its notice board and website." },
+
+  // ---------- SETAs ----------
+  { id: "servicesseta", name: "Services SETA", type: "SETA", province: "National", fields: ["Business & Admin", "Human Resources", "Hospitality & Tourism", "Public Management", "Finance & Accounting"], url: "https://servicesseta.org.za", note: "Funds workplace-based learning in the services sector. Check its news and opportunities pages." },
+  { id: "mictseta", name: "MICT SETA", type: "SETA", province: "National", fields: ["ICT", "Marketing & Media"], url: "https://www.mict.org.za", note: "SETA for media, information and communication technologies. Useful for IT and media students." },
+  { id: "merseta", name: "merSETA", type: "SETA", province: "National", fields: ["Engineering"], url: "https://www.merseta.org.za", note: "SETA for manufacturing, engineering and related services." },
+  { id: "fasset", name: "FASSET", type: "SETA", province: "National", fields: ["Finance & Accounting"], url: "https://www.fasset.org.za", note: "SETA for finance, accounting and management consulting." },
+  { id: "bankseta", name: "BANKSETA", type: "SETA", province: "National", fields: ["Finance & Accounting", "ICT", "Business & Admin"], url: "https://www.bankseta.org.za", note: "SETA for the banking and microfinance sector." },
+  { id: "wrseta", name: "W&RSETA", type: "SETA", province: "National", fields: ["Retail & Marketing", "Logistics", "Business & Admin"], url: "https://www.wrseta.org.za", note: "SETA for the wholesale and retail sector." },
+  { id: "cathsseta", name: "CATHSSETA", type: "SETA", province: "National", fields: ["Hospitality & Tourism", "Marketing & Media"], url: "https://www.cathsseta.org.za", note: "SETA for culture, arts, tourism, hospitality and sport." },
+  { id: "chieta", name: "CHIETA", type: "SETA", province: "National", fields: ["Engineering"], url: "https://www.chieta.org.za", note: "SETA for the chemical industries." },
+
+  // ---------- Job boards and student portals ----------
+  { id: "sayouth", name: "SA Youth", type: "Job board", province: "National", fields: ["ICT", "Business & Admin", "Finance & Accounting", "Retail & Marketing", "Engineering", "Hospitality & Tourism", "Human Resources", "Logistics", "Public Management", "Marketing & Media"], url: "https://sayouth.mobi", note: "Free, zero-rated youth platform with work and learning opportunities. Create a profile once and apply to many." },
+  { id: "harambee", name: "Harambee Youth Employment Accelerator", type: "Job board", province: "National", fields: ["ICT", "Business & Admin", "Finance & Accounting", "Retail & Marketing", "Engineering", "Hospitality & Tourism", "Human Resources", "Logistics", "Public Management", "Marketing & Media"], url: "https://www.harambee.co.za", note: "Connects young South Africans to entry-level work. Free for job seekers." },
+  { id: "setacareers", name: "SETA Careers", type: "Job board", province: "National", fields: ["ICT", "Business & Admin", "Finance & Accounting", "Engineering", "Hospitality & Tourism", "Human Resources", "Public Management"], url: "https://www.setacareers.co.za", note: "Posts TVET college and SETA WIL programme notices. Always confirm on the college or SETA's own site." },
+  { id: "studentroom", name: "StudentRoom", type: "Job board", province: "National", fields: ["ICT", "Business & Admin", "Finance & Accounting", "Engineering", "Hospitality & Tourism", "Human Resources", "Public Management"], url: "https://www.studentroom.co.za", note: "Posts TVET college WIL programme notices. Always confirm on the college's own site." },
+  { id: "careers24", name: "Careers24", type: "Job board", province: "National", fields: ["ICT", "Business & Admin", "Finance & Accounting", "Engineering", "Retail & Marketing", "Hospitality & Tourism", "Human Resources", "Logistics", "Public Management", "Marketing & Media"], url: "https://www.careers24.com", note: "Large job board. Search 'work integrated learning', 'in-service training' or 'intern' and set your province." },
+  { id: "pnet", name: "PNet", type: "Job board", province: "National", fields: ["ICT", "Business & Admin", "Finance & Accounting", "Engineering", "Retail & Marketing", "Human Resources", "Logistics", "Marketing & Media"], url: "https://www.pnet.co.za", note: "Job board. Search 'intern', 'WIL' or 'in-service training'." },
+  { id: "indeed", name: "Indeed South Africa", type: "Job board", province: "National", fields: ["ICT", "Business & Admin", "Finance & Accounting", "Engineering", "Retail & Marketing", "Hospitality & Tourism", "Human Resources", "Logistics", "Public Management", "Marketing & Media"], url: "https://za.indeed.com", note: "Job board. Try 'work integrated learning programme' and 'in-service training'." }
+];
